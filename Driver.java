@@ -38,29 +38,65 @@ public class Driver {
     glen.add(5);
     glen.add(12);
     glen.add(3);
+    glen.add(9);
+
+    System.out.println("\nBUBBLE!");
+
     System.out.println("\nArrayList glen before sorting:\n" + glen);
     a.bubble(glen);
     System.out.println("\nArrayList glen after sorting:\n" + glen);
 
-    System.out.println("\nBUBBLE!");
     System.out.println("\nBubble passes: " + a.counter);
 
-    System.out.println("\nSELECTION!");
     a.counter = 0;
-    shuffle(glen);
-    a.selection(glen);
-    System.out.println("\nSelection passes: " + a.counter);
-
-    System.out.println("\nINSERTION!");
-    a.counter = 0;
-    shuffle(glen);
-    a.insertion(glen);
-    System.out.println("\nInsertion passes: " + a.counter);
+    // System.out.println("\nSELECTION!");
+    // a.counter = 0;
+    // shuffle(glen);
+    // a.selection(glen);
+    // System.out.println("\nSelection passes: " + a.counter);
+    //
+    // System.out.println("\nINSERTION!");
+    // a.counter = 0;
+    // shuffle(glen);
+    // a.insertion(glen);
+    // System.out.println("\nInsertion passes: " + a.counter);
 
     // ArrayList coco = populate(10, 1, 1000);
     // System.out.println("\nArrayList coco before sorting:\n" + coco);
     // a.insertion(coco);
     // System.out.println("\nArrayList coco after sorting:\n" + coco"\nPasses: " + a.counter);
+
+    ArrayList zhoumama = new ArrayList<Integer>();
+    zhoumama.add(10);
+    zhoumama.add(9);
+    zhoumama.add(8);
+    zhoumama.add(7);
+    zhoumama.add(6);
+
+    System.out.println("\nBUBBLE!");
+
+    System.out.println("\nArrayList glen before sorting:\n" + zhoumama);
+
+    //long bubbefore = (System.currentTimeMillis());
+    a.bubble(zhoumama);
+    //long bubafter = (System.currentTimeMillis());
+
+    System.out.println("\nArrayList glen after sorting:\n" + zhoumama);
+
+    System.out.println("\nBubble passes: " + a.counter);
+    //System.out.println ("Time: " + (bubafter-bubbefore));
+
+    // System.out.println("\nSELECTION!");
+    // a.counter = 0;
+    // shuffle(zhoumama);
+    // a.selection(zhoumama);
+    // System.out.println("\nSelection passes: " + a.counter);
+    //
+    // System.out.println("\nINSERTION!");
+    // a.counter = 0;
+    // shuffle(zhoumama);
+    // a.insertion(zhoumama);
+    // System.out.println("\nInsertion passes: " + a.counter);
   } //end main
 
 } //end class
