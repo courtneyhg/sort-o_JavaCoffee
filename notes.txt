@@ -1,0 +1,41 @@
+TNPG: Java Coffee - Courtney Huang, Jason Yang, Yuki Feng
+APCS period 7
+Lab04: Never Fear, Big O is Here!
+2022 01 07
+
+DISCO:
+  * You can set an int to count how many passes it takes in order to compre the algos
+
+QCC:
+  * Is using passes a good comparison? Wouldn't it be better to count how many swaps it takes?
+  * Should the counter have a new instance for separate methods?
+
+BUB-QA (Q’s and their A’s from header comment)
+  * q0: If a pass requires no swaps, what do you know?
+  * a0:  It is already in order.
+  * q1: After pass p, what do you know?
+  * a1: p elements starting on the left are in order.
+  * q2: How many passes are necessary to completely sort?
+  * a2: n-1? n being size of array
+
+SEL-QA (Q’s and their A’s from header comment)
+  * q0: How many passes to sort n elements?
+  * a0: n - 1 passes
+  * q1: What do you know after pass p?
+  * a1: The last p elements are in correct positions
+  * q2: How do you know if sorted?
+  * a2: After the n - 1 pass
+  * q3: What does a pass boil down to?
+  * a3: You swap the greatest value with the value on the very end and repeat.
+  
+INS-QA (Q’s and their A’s from header comment)
+  * q0: How many passes to sort n elements?
+  * a0: n-1 passe
+  * q1: What do you know after pass p?
+  * a1: p elements form the left are sorted
+  * q2: How will you know when sorted?
+  * a2: When partition equals the array size
+  * q3: What constitutes a pass?
+  * a3: Once you swapped a number to its correct place
+  * q4: What must you track?
+  * a4: the index of element you are comparing to others

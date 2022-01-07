@@ -1,3 +1,17 @@
+/*
+TNPG: Java Coffee - Courtney Huang, Jason Yang, Yuki Feng
+APCS period 7
+Lab04: Never Fear, Big O is Here!
+2022 01 07
+*/
+
+/*
+DISCO:
+
+QCC:
+Is using passes a good comparison? Wouldn't it be better to count how many swaps it takes?
+*/
+
 import java.util.ArrayList;
 
 public class Driver {
