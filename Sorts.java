@@ -1,3 +1,18 @@
+/*
+TNPG: Java Coffee - Courtney Huang, Jason Yang, Yuki Feng
+APCS period 7
+Lab04: Never Fear, Big O is Here!
+2022 01 07
+*/
+
+/*
+DISCO:
+you can set an int to count how many passes it takes in order to compre the algos
+
+QCC:
+should the counter have a new instance for separate methods?
+*/
+
 import java.util.ArrayList;
 
 public class Sorts{
