@@ -63,22 +63,6 @@ public class Driver {
     System.out.println("\nBubble passes: " + a.counter);
 
     a.counter = 0;
-    // System.out.println("\nSELECTION!");
-    // a.counter = 0;
-    // shuffle(glen);
-    // a.selection(glen);
-    // System.out.println("\nSelection passes: " + a.counter);
-    //
-    // System.out.println("\nINSERTION!");
-    // a.counter = 0;
-    // shuffle(glen);
-    // a.insertion(glen);
-    // System.out.println("\nInsertion passes: " + a.counter);
-
-    // ArrayList coco = populate(10, 1, 1000);
-    // System.out.println("\nArrayList coco before sorting:\n" + coco);
-    // a.insertion(coco);
-    // System.out.println("\nArrayList coco after sorting:\n" + coco"\nPasses: " + a.counter);
 
     ArrayList zhoumama = new ArrayList<Integer>();
     zhoumama.add(10);
@@ -87,7 +71,7 @@ public class Driver {
     zhoumama.add(7);
     zhoumama.add(6);
 
-    System.out.println("\nBUBBLE!");
+    // System.out.println("\nBUBBLE!");
 
     System.out.println("\nArrayList glen before sorting:\n" + zhoumama);
 
