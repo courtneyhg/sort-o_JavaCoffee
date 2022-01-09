@@ -18,6 +18,7 @@ import java.util.ArrayList;
 public class Sorts{
   //int to count passes to compare how many it takes for different algos
   public static int counter = 0;
+  public static int swaps = 0;
 
   // VOID version of bubble
   // Rearranges elements of input ArrayList
@@ -30,6 +31,7 @@ public class Sorts{
           Comparable tempor = data.get(index);
           data.set(index, data.get(index - 1));
           data.set(index - 1, tempor);
+          swaps++;
         } //end if block
       } //end index loop
       counter++;

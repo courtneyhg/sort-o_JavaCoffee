@@ -46,6 +46,7 @@ public class Driver {
     System.out.println("\n*** Testing sort-in-place (void) version... *** ");
     Sorts a = new Sorts();
 
+    System.out.println("\nBUBBLE!");
     ArrayList glen = new ArrayList<Integer>();
     glen.add(7);
     glen.add(1);
@@ -53,35 +54,46 @@ public class Driver {
     glen.add(12);
     glen.add(3);
     glen.add(9);
-
-    System.out.println("\nBUBBLE!");
-
-    System.out.println("\nArrayList glen before sorting:\n" + glen);
+    System.out.println("ArrayList glen before sorting:\n" + glen);
     a.bubble(glen);
-    System.out.println("\nArrayList glen after sorting:\n" + glen);
-
-    System.out.println("\nBubble passes: " + a.counter);
-
+    System.out.println("ArrayList glen after sorting:\n" + glen);
+    System.out.println("Bubble passes: " + a.counter);
+    System.out.println("Bubble swaps: " + a.swaps);
     a.counter = 0;
+    a.swaps = 0;
 
+    System.out.println("\nBEST CASE OF BUBBLE!");
+    ArrayList jolly = new ArrayList<Integer>();
+    jolly.add(1);
+    jolly.add(2);
+    jolly.add(3);
+    jolly.add(4);
+    jolly.add(5);
+    jolly.add(6);
+    System.out.println("ArrayList jolly before sorting:\n" + jolly);
+    a.bubble(jolly);
+    System.out.println("ArrayList jolly after sorting:\n" + jolly);
+    System.out.println("Bubble passes: " + a.counter);
+    System.out.println("Bubble swaps: " + a.swaps);
+    a.counter = 0;
+    a.swaps = 0;
+
+    System.out.println("\nWORST CASE OF BUBBLE!");
     ArrayList zhoumama = new ArrayList<Integer>();
+    zhoumama.add(11);
     zhoumama.add(10);
     zhoumama.add(9);
     zhoumama.add(8);
     zhoumama.add(7);
     zhoumama.add(6);
-
-    // System.out.println("\nBUBBLE!");
-
-    System.out.println("\nArrayList glen before sorting:\n" + zhoumama);
-
-    //long bubbefore = (System.currentTimeMillis());
+    System.out.println("ArrayList glen before sorting:\n" + zhoumama);
     a.bubble(zhoumama);
-    //long bubafter = (System.currentTimeMillis());
+    System.out.println("ArrayList glen after sorting:\n" + zhoumama);
+    System.out.println("Bubble passes: " + a.counter);
+    System.out.println("Bubble swaps: " + a.swaps);
+    a.counter = 0;
+    a.swaps = 0;
 
-    System.out.println("\nArrayList glen after sorting:\n" + zhoumama);
-
-    System.out.println("\nBubble passes: " + a.counter);
     //System.out.println ("Time: " + (bubafter-bubbefore));
 
     // System.out.println("\nSELECTION!");
