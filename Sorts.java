@@ -54,6 +54,7 @@ public class Sorts{
       for (int i = 0; i < pass; i++) {
         if (data.get(i).compareTo(data.get(maxPos)) > 0) {
           maxPos = i;
+          swaps++;
         } //end if block
         System.out.println("maxPos: " + maxPos);// diag
         System.out.println(data);// diag
@@ -62,6 +63,7 @@ public class Sorts{
       Comparable joemama = data.get(pass);
       data.set(pass, data.get(maxPos));
       data.set(maxPos, joemama);
+
       System.out.println("after swap: " + data);// diag
       //update pass counter
       counter++;
