@@ -50,21 +50,26 @@ public class Sorts{
 
     for (int pass = data.size() - 1; pass > 0; pass--) {
       maxPos = pass;
-      System.out.println("\nbegin pass " + (data.size() - pass));// diag
+      // *prints passes* System.out.println("\nbegin pass " + (data.size() - pass));// diag
       for (int i = 0; i < pass; i++) {
         if (data.get(i).compareTo(data.get(maxPos)) > 0) {
           maxPos = i;
           swaps++;
         } //end if block
-        System.out.println("maxPos: " + maxPos);// diag
-        System.out.println(data);// diag
+
+        // *prints passes*
+        // System.out.println("maxPos: " + maxPos);// diag
+        // System.out.println(data);// diag
+        
       } //end i loop
       // swap last element with element at maxPos.
       Comparable joemama = data.get(pass);
       data.set(pass, data.get(maxPos));
       data.set(maxPos, joemama);
 
-      System.out.println("after swap: " + data);// diag
+      // *prints passes*
+      //System.out.println("after swap: " + data);// diag
+
       //update pass counter
       counter++;
     } //end pass for loop
