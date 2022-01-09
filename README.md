@@ -8,7 +8,7 @@ Song of the Week: Baby Shark
 
 When the size of the arrays are the same, it takes the same number of passes to
 sort it. However, we looked at how many times numbers were swapped. In our best
-case, it took 0 swaps and 6 passes. Meanwhile, in our worst case, it took 15 swaps
+cases, it took 0 swaps and 6 passes. Meanwhile, in our worst case, it took 15 swaps
 and 6 passes.
 
 ### Selection Sort

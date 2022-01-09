@@ -78,6 +78,22 @@ public class Driver {
     a.counter = 0;
     a.swaps = 0;
 
+    System.out.println("\nBEST CASE OF BUBBLE!");
+    ArrayList bolly = new ArrayList<Integer>();
+    bolly.add(6);
+    bolly.add(6);
+    bolly.add(6);
+    bolly.add(6);
+    bolly.add(6);
+    bolly.add(6);
+    System.out.println("ArrayList bolly before sorting:\n" + bolly);
+    a.bubble(bolly);
+    System.out.println("ArrayList bolly after sorting:\n" + bolly);
+    System.out.println("Bubble passes: " + a.counter);
+    System.out.println("Bubble swaps: " + a.swaps);
+    a.counter = 0;
+    a.swaps = 0;
+
     System.out.println("\nWORST CASE OF BUBBLE!");
     ArrayList zhoumama = new ArrayList<Integer>();
     zhoumama.add(11);
