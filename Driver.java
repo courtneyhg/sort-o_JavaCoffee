@@ -197,7 +197,7 @@ public class Driver {
     carrie.add(3);
     carrie.add(9);
     System.out.println("ArrayList zxl before sorting:\n" + carrie);
-    c.selection(carrie);
+    c.insertion(carrie);
     System.out.println("ArrayList zxl after sorting:\n" + carrie);
     System.out.println("Selection passes: " + c.counter);
     System.out.println("Selection swaps: " + c.swaps);
@@ -213,7 +213,7 @@ public class Driver {
     kol.add(5);
     kol.add(6);
     System.out.println("ArrayList kol before sorting:\n" + kol);
-    b.selection(kol);
+    b.insertion(kol);
     System.out.println("ArrayList kol after sorting:\n" + kol);
     System.out.println("Selection passes: " + b.counter);
     System.out.println("Selection swaps: " + b.swaps);
@@ -229,7 +229,7 @@ public class Driver {
     qq.add(6);
     qq.add(6);
     System.out.println("ArrayList qq before sorting:\n" + qq);
-    b.selection(qq);
+    b.insertion(qq);
     System.out.println("ArrayList qq after sorting:\n" + qq);
     System.out.println("Selection passes: " + b.counter);
     System.out.println("Selection swaps: " + b.swaps);
@@ -245,7 +245,7 @@ public class Driver {
     wer.add(7);
     wer.add(6);
     System.out.println("ArrayList wer before sorting:\n" + wer);
-    b.selection(wer);
+    b.insertion(wer);
     System.out.println("ArrayList wer after sorting:\n" + wer);
     System.out.println("Selection passes: " + b.counter);
     System.out.println("Selection swaps: " + b.swaps);
