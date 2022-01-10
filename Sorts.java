@@ -50,21 +50,26 @@ public class Sorts{
 
     for (int pass = data.size() - 1; pass > 0; pass--) {
       maxPos = pass;
-      System.out.println("\nbegin pass " + (data.size() - pass));// diag
+      // *prints passes* System.out.println("\nbegin pass " + (data.size() - pass));// diag
       for (int i = 0; i < pass; i++) {
         if (data.get(i).compareTo(data.get(maxPos)) > 0) {
           maxPos = i;
-          swaps++;
         } //end if block
-        System.out.println("maxPos: " + maxPos);// diag
-        System.out.println(data);// diag
+
+        // *prints passes*
+        // System.out.println("maxPos: " + maxPos);// diag
+        // System.out.println(data);// diag
+
       } //end i loop
       // swap last element with element at maxPos.
       Comparable joemama = data.get(pass);
       data.set(pass, data.get(maxPos));
       data.set(maxPos, joemama);
+      swaps++;
 
-      System.out.println("after swap: " + data);// diag
+      // *prints passes*
+      //System.out.println("after swap: " + data);// diag
+
       //update pass counter
       counter++;
     } //end pass for loop
@@ -77,17 +82,18 @@ public class Sorts{
   {
     for (int partition = 1; partition < data.size(); partition++) {
       // partition marks first item in unsorted region
-      System.out.println("\npartition: " + partition + "\tdataset:"); // diag
-      System.out.println(data);
+      // *print passes* System.out.println("\npartition: " + partition + "\tdataset:"); // diag
+      // *print passes* System.out.println(data);
       // traverse sorted region from right to left
       for (int i = partition; i > 0; i--) {
         // "walk" the current item to where it belongs by swapping adjacent items
         // by swapping adjacent items
         if (data.get(i).compareTo(data.get(i - 1)) == -1) {
-          System.out.println("swap indices " + (i - 1) + " & " + i + "..."); // diag
+          // *print passes* System.out.println("swap indices " + (i - 1) + " & " + i + "..."); // diag
           Comparable temp = data.get(i);
           data.set(i, data.get(i - 1));
           data.set(i - 1, temp);
+          swaps++;
         } else
           break;
       } //end i loop

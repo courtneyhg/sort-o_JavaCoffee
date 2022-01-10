@@ -169,14 +169,84 @@ public class Driver {
     System.out.println("\nWORST CASE OF SELECTION!");
     ArrayList geg = new ArrayList<Integer>();
     geg.add(11);
-    geg.add(10);
     geg.add(9);
-    geg.add(8);
+    geg.add(10);
     geg.add(7);
+    geg.add(8);
     geg.add(6);
     System.out.println("ArrayList geg before sorting:\n" + geg);
     b.selection(geg);
     System.out.println("ArrayList geg after sorting:\n" + geg);
+    System.out.println("Selection passes: " + b.counter);
+    System.out.println("Selection swaps: " + b.swaps);
+    b.counter = 0;
+    b.swaps = 0;
+
+
+
+    System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+
+
+
+    System.out.println("\nINSERTION!");
+    ArrayList carrie = new ArrayList<Integer>();
+    carrie.add(7);
+    carrie.add(1);
+    carrie.add(5);
+    carrie.add(12);
+    carrie.add(3);
+    carrie.add(9);
+    System.out.println("ArrayList zxl before sorting:\n" + carrie);
+    c.insertion(carrie);
+    System.out.println("ArrayList zxl after sorting:\n" + carrie);
+    System.out.println("Selection passes: " + c.counter);
+    System.out.println("Selection swaps: " + c.swaps);
+    c.counter = 0;
+    c.swaps = 0;
+
+    System.out.println("\nBEST CASE OF INSERTION!");
+    ArrayList kol = new ArrayList<Integer>();
+    kol.add(1);
+    kol.add(2);
+    kol.add(3);
+    kol.add(4);
+    kol.add(5);
+    kol.add(6);
+    System.out.println("ArrayList kol before sorting:\n" + kol);
+    b.insertion(kol);
+    System.out.println("ArrayList kol after sorting:\n" + kol);
+    System.out.println("Selection passes: " + b.counter);
+    System.out.println("Selection swaps: " + b.swaps);
+    b.counter = 0;
+    b.swaps = 0;
+
+    System.out.println("\nBEST CASE OF INSERTION!");
+    ArrayList qq = new ArrayList<Integer>();
+    qq.add(6);
+    qq.add(6);
+    qq.add(6);
+    qq.add(6);
+    qq.add(6);
+    qq.add(6);
+    System.out.println("ArrayList qq before sorting:\n" + qq);
+    b.insertion(qq);
+    System.out.println("ArrayList qq after sorting:\n" + qq);
+    System.out.println("Selection passes: " + b.counter);
+    System.out.println("Selection swaps: " + b.swaps);
+    b.counter = 0;
+    b.swaps = 0;
+
+    System.out.println("\nWORST CASE OF INSERTION!");
+    ArrayList wer = new ArrayList<Integer>();
+    wer.add(11);
+    wer.add(10);
+    wer.add(9);
+    wer.add(8);
+    wer.add(7);
+    wer.add(6);
+    System.out.println("ArrayList wer before sorting:\n" + wer);
+    b.insertion(wer);
+    System.out.println("ArrayList wer after sorting:\n" + wer);
     System.out.println("Selection passes: " + b.counter);
     System.out.println("Selection swaps: " + b.swaps);
     b.counter = 0;
