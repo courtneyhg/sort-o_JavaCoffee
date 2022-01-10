@@ -48,6 +48,7 @@ public class Sorts{
     //maxPos will point to position of SELECTION (greatest value)
     int maxPos;
 
+    counter = 1;
     for (int pass = data.size() - 1; pass > 0; pass--) {
       maxPos = pass;
       // *prints passes* System.out.println("\nbegin pass " + (data.size() - pass));// diag
@@ -80,6 +81,7 @@ public class Sorts{
   // postcondition: data's elements sorted in ascending order
   public static void insertion(ArrayList<Comparable> data)
   {
+    counter = 1;
     for (int partition = 1; partition < data.size(); partition++) {
       // partition marks first item in unsorted region
       // *print passes* System.out.println("\npartition: " + partition + "\tdataset:"); // diag
@@ -97,7 +99,7 @@ public class Sorts{
         } else
           break;
       } //end i loop
-      counter++;
+      counter ++;
     } //end parition loop
   } //end insertion
 

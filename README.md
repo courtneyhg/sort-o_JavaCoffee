@@ -14,14 +14,12 @@ and 6 passes.
   * Best Case Time Complexity: O(n)
   * Worst Case Time Complexity: O(n^2)
 
-
 ### Selection Sort
   * No best or worst cases.
 
 Selection sort is a bit different from Bubble and Insertion because the time complexity for the best case and worse case is the same. Regardless of whether the elements are already in ascending or descending order, the algorithm will go through the entire array O(n^2) times. The passes and swaps always remain the same no matter how the arrays are ordered.
 
 Time Complexity for all cases: O(n^2)
-
 
 ### Insertion Sort
   * Best Case: The numbers are from least to greatest (already sorted) or the numbers are all the same.
@@ -31,5 +29,3 @@ When the size of the arrays are the same, it takes the same number of passes to 
 
   * Best Case Time Complexity: O(n)
   * Worst Case Time Complexity: O(n^2)
-
-

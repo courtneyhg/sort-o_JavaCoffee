@@ -252,91 +252,25 @@ public class Driver {
     b.counter = 0;
     b.swaps = 0;
 
+    System.out.println("\nWORST CASE OF INSERTION!");
+    ArrayList oop = new ArrayList<Integer>();
+    oop.add(30);
+    oop.add(20);
+    oop.add(10);
+    oop.add(0);
+    oop.add(-10);
+    oop.add(-20);
+    oop.add(-30);
+    oop.add(-40);
+    oop.add(-50);
+    System.out.println("ArrayList oop before sorting:\n" + oop);
+    b.insertion(oop);
+    System.out.println("ArrayList oop after sorting:\n" + oop);
+    System.out.println("Selection passes: " + b.counter);
+    System.out.println("Selection swaps: " + b.swaps);
+    b.counter = 0;
+    b.swaps = 0;
 
-
-
-
-    // System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-    //
-    //
-    //
-    // System.out.println("\nINSERTION!");
-    // ArrayList tjy = new ArrayList<Integer>();
-    // tjy.add(7);
-    // tjy.add(1);
-    // tjy.add(5);
-    // tjy.add(12);
-    // tjy.add(3);
-    // tjy.add(9);
-    // System.out.println("ArrayList tjy before sorting:\n" + tjy);
-    // a.insertion(tjy);
-    // System.out.println("ArrayList tjy after sorting:\n" + tjy);
-    // System.out.println("Insertion passes: " + a.counter);
-    // System.out.println("Insertion swaps: " + a.swaps);
-    // a.counter = 0;
-    // a.swaps = 0;
-    //
-    // System.out.println("\nBEST CASE OF SELECTION!");
-    // ArrayList tch = new ArrayList<Integer>();
-    // tch.add(1);
-    // tch.add(2);
-    // tch.add(3);
-    // tch.add(4);
-    // tch.add(5);
-    // tch.add(6);
-    // System.out.println("ArrayList tch before sorting:\n" + tch);
-    // a.selection(tch);
-    // System.out.println("ArrayList tch after sorting:\n" + tch);
-    // System.out.println("Selection passes: " + a.counter);
-    // System.out.println("Selection swaps: " + a.swaps);
-    // a.counter = 0;
-    // a.swaps = 0;
-    //
-    // System.out.println("\nBEST CASE OF SELECTION!");
-    // ArrayList tyf = new ArrayList<Integer>();
-    // tyf.add(6);
-    // tyf.add(6);
-    // tyf.add(6);
-    // tyf.add(6);
-    // tyf.add(6);
-    // tyf.add(6);
-    // System.out.println("ArrayList tyf before sorting:\n" + tyf);
-    // a.selection(tyf);
-    // System.out.println("ArrayList tyf after sorting:\n" + tyf);
-    // System.out.println("Selection passes: " + a.counter);
-    // System.out.println("Selection swaps: " + a.swaps);
-    // a.counter = 0;
-    // a.swaps = 0;
-    //
-    // System.out.println("\nWORST CASE OF SELECTION!");
-    // ArrayList geg = new ArrayList<Integer>();
-    // geg.add(11);
-    // geg.add(10);
-    // geg.add(9);
-    // geg.add(8);
-    // geg.add(7);
-    // geg.add(6);
-    // System.out.println("ArrayList geg before sorting:\n" + geg);
-    // a.selection(geg);
-    // System.out.println("ArrayList geg after sorting:\n" + geg);
-    // System.out.println("Selection passes: " + a.counter);
-    // System.out.println("Selection swaps: " + a.swaps);
-    // a.counter = 0;
-    // a.swaps = 0;
-
-    //System.out.println ("Time: " + (bubafter-bubbefore));
-
-    // System.out.println("\nSELECTION!");
-    // a.counter = 0;
-    // shuffle(zhoumama);
-    // a.selection(zhoumama);
-    // System.out.println("\nSelection passes: " + a.counter);
-    //
-    // System.out.println("\nINSERTION!");
-    // a.counter = 0;
-    // shuffle(zhoumama);
-    // a.insertion(zhoumama);
-    // System.out.println("\nInsertion passes: " + a.counter);
   } //end main
 
 } //end class
