@@ -29,3 +29,8 @@ When the size of the arrays are the same, it takes the same number of passes to 
 
   * Best Case Time Complexity: O(n)
   * Worst Case Time Complexity: O(n^2)
+
+### Explaining the Complexity Equations
+  * The best case time complexity is O(n) with all of the sorting algorithms because when it is the best case, that means an already ascending arraylist or with all the same integers. The amount of items in the array, n, will be the same amount of passes required.
+  * The worse case time complexity is 0(n^2) due to the nested for loop in all methods that ensure having to loop through 2 times each array means the squared passes. For example, changing the size of an array by the factor integer n will mean that the swaps amount will be affected by a factor of n^2.
+    * For example, Arraylist wer has 6 items and Arraylist oop has 12 atoms, meaning that n is 2 because oop is 2 times the size of wer. After sorting, the swap amount of wer is 15 and for oop, 66. The factor of change from 15 to 66 is around 4, which is 2^2, following the equation. 

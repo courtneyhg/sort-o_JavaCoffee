@@ -254,6 +254,9 @@ public class Driver {
 
     System.out.println("\nWORST CASE OF INSERTION!");
     ArrayList oop = new ArrayList<Integer>();
+    oop.add(60);
+    oop.add(50);
+    oop.add(40);
     oop.add(30);
     oop.add(20);
     oop.add(10);
@@ -271,6 +274,18 @@ public class Driver {
     b.counter = 0;
     b.swaps = 0;
 
+    System.out.println("\nWORST CASE OF INSERTION!");
+    ArrayList biden = new ArrayList<Integer>();
+    for (int bib = 100; bib > 0; bib--) {
+      biden.add(bib);
+    }
+    System.out.println("Arraylist biden before sorting:\n" + biden);
+    b.insertion(biden);
+    System.out.println("ArrayList biden after sorting:\n" + biden);
+    System.out.println("Selection passes: " + b.counter);
+    System.out.println("Selection swaps: " + b.swaps);
+    b.counter = 0;
+    b.swaps = 0;
   } //end main
 
 } //end class
