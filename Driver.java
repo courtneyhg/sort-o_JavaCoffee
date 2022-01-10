@@ -182,6 +182,19 @@ public class Driver {
     b.counter = 0;
     b.swaps = 0;
 
+    System.out.println("\nWORST CASE OF SELECTION!");
+    ArrayList hell = new ArrayList<Integer>();
+    for (int bib = 100; bib > 0; bib--) {
+      hell.add(bib);
+    }
+    System.out.println("Arraylist biden before sorting:\n" + hell);
+    b.insertion(hell);
+    System.out.println("ArrayList biden after sorting:\n" + hell);
+    System.out.println("Selection passes: " + b.counter);
+    System.out.println("Selection swaps: " + b.swaps);
+    b.counter = 0;
+    b.swaps = 0;
+
 
 
     System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
